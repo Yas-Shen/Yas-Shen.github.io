@@ -1,0 +1,45 @@
+* {
+	box-sizing: border-box;
+}
+
+nav {
+	display: flex;
+	justify-content: flex-end;
+	align-content: space-between;
+	flex-direction: row;
+	background-color: #55b790;
+	font-family: 'Ubuntu', sans-serif;
+	width: 100%;
+	height: 50px;
+	border-radius: 15px;
+}
+
+div.name {
+	display: block;
+	font-family: 'Ubuntu', sans-serif;
+	width: 25%;
+	float: left;
+	margin-left: 6px;
+	margin-bottom: -50px;
+	
+}
+
+ul {
+	display: flex;
+	justify-content: flex-end;
+	width: 75%;
+	float: right;
+	color: #FFFFFF;
+	list-style-type: none;
+}
+
+li {
+	margin-right: 10px;
+}
+
+header, p {
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+	font-family: 'Ubuntu', sans-serif;
+}
