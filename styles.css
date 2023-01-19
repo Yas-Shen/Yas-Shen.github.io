@@ -162,18 +162,28 @@ footer {
 	margin-top: 23%;
 }
 
+h4 {
+	display: flex;
+	justify-content: center;
+	align-content: space-between;
+	margin-right: 2%;
+	margin-bottom: 1.5%;
+}
 .contacts {
 	display: flex;
 	justify-content: center;
 	align-content: space-around;
+	flex-direction: row;
 	flex-wrap: wrap;
-	position: relative;
 	object-fit: contain;
 }
 
-
+footer a {
+	margin-top: 1%;
+}
 
 @media screen and (max-width: 1000px) {
+	
 	.initials {
 		display: flex;
 		justify-content: space-around;
@@ -196,13 +206,37 @@ footer {
 	div.initials a {
 		display: block;
 	}
-	.contacts {
+	
+	h4 {
+		margin: 1% 0 0 0;
+	}
+	
+	footer a {
 		display: flexbox;
-		margin: 3%;
+		margin: 0 0 0.5% 0;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	
+	h4 {
+		margin: 5% 0 0 0;
+	}
+	
+	.contacts {
+		margin: 0 0 4% 0;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	
+	footer a {
+		margin: 4% 0 0 0;
 	}
 }
 
 @media screen and (max-width: 700px) {
+	
 	.main-box {
 		display: inline-block;
 		width: 80%;
@@ -219,8 +253,13 @@ footer {
 	div.project-item {
 		width: 100%;
 	}
-	.contacts {
-		
+	
+	h4 {
+		margin: 0 0 5% 0;
+	}
+	
+	footer a {
+		margin-top: 2.5% 0 0 0;
 	}
 }
 
@@ -257,8 +296,11 @@ footer {
 		width: 77.5%;
 	}
 	
-	.contacts {
-		margin-bottom: 2%;
+	h4 {
+		margin: 4% 3% 0 0;
 	}
 	
+	footer a {
+		margin: 3% 0 1% 0 ;
+	}
 }
