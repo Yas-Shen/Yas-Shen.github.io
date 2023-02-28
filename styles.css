@@ -15,12 +15,14 @@ div.initials a {
 }
 
 
-h3.name nav {
+h3 {
 	display: flexbox;
 	justify-content: flex-start;
 	align-content: flex-start;
 	font-size: 17px;
 	color: #16324f;
+	position: relative;
+	left: 10px;
 }
 
 nav {
@@ -116,9 +118,9 @@ h2 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 60%;
-	height: 60%;
-	margin-left: 45px;
+	width: 80%;
+	height: 80%;
+	margin-left: 10%;
 }
 
 div.project-item {
@@ -133,19 +135,55 @@ div.project-item {
 	margin: 5px;
 }
 
+div.project-item p {
+	margin-right: 20%;
+}
+
 button.live, .code {
 	display: flexgrid;
 	justify-content: center;
+	flex-direction: column;
 	align-items: end;
 	background-color: #000000;
 	color: #34a39a;
 	border: 2px solid #34a39a;
 	border-radius: 15px;
-	padding-bottom: 3px;
-	margin-bottom: 5px;
+	padding-bottom: 2%;
+	margin: 0 0 2% 20%;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #5911a4;
+	height: 50px;
+	border-radius: 15px;
+	margin-top: 23%;
+}
+
+h4 {
+	display: flex;
+	justify-content: center;
+	align-content: space-between;
+	margin-right: 2%;
+	margin-bottom: 1.5%;
+}
+.contacts {
+	display: flex;
+	justify-content: center;
+	align-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+	object-fit: contain;
+}
+
+footer a {
+	margin-top: 1%;
 }
 
 @media screen and (max-width: 1000px) {
+	
 	.initials {
 		display: flex;
 		justify-content: space-around;
@@ -168,9 +206,43 @@ button.live, .code {
 	div.initials a {
 		display: block;
 	}
+	
+	h4 {
+		margin: 1% 0 0 0;
+	}
+	
+	footer a {
+		display: flexbox;
+		margin: 0 0 0.5% 0;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	
+	h4 {
+		margin: 5% 0 0 0;
+	}
+	
+	.contacts {
+		margin: 0 0 4% 0;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	
+	footer a {
+		margin: 4% 0 0 0;
+	}
 }
 
 @media screen and (max-width: 700px) {
+	
+	.main-box {
+		display: inline-block;
+		width: 80%;
+		margin: 2% 10% 2% 2%;
+	}
+	
 	div.project-container {
 		display: flex;
 		justify-content: center;
@@ -180,6 +252,14 @@ button.live, .code {
 	
 	div.project-item {
 		width: 100%;
+	}
+	
+	h4 {
+		margin: 0 0 5% 0;
+	}
+	
+	footer a {
+		margin-top: 2.5% 0 0 0;
 	}
 }
 
@@ -208,5 +288,19 @@ button.live, .code {
 		justify-content: flex-start;
 	}
 	
+	.main-box {
+		display: inline-block;
+		margin: 0 10% 0 0;
+		position: relative;
+		left: 11%;
+		width: 77.5%;
+	}
 	
+	h4 {
+		margin: 4% 3% 0 0;
+	}
+	
+	footer a {
+		margin: 3% 0 1% 0 ;
+	}
 }
