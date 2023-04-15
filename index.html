@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
       <title>Portfolio</title>
 	  <meta charset="UTF-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 	  <link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 	  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	  <link rel="stylesheet" type="text/css" href="normalize.css">
 </head>
 <body>	
@@ -13,77 +16,113 @@
 		<div class="initials">
 			<h3 class="name">Yasmin Shenair</h3>
 			<a href="#" class="icon" title="initials">
-				<img src="ys.png"alt="initials" />
+				<img src="ys.png" alt="initials" />
 			</a>
-			<a href="#" class="icon" title="icon">
-				<img src="hamburger.png"alt="hamburger-menu" />
-			 </a>
 		</div>
-		<div class="navbar" id="navbar">
-				<a href="#about">About</a>
-				<a href="#portfolio">Portfolio</a>
-				<a href="#contact">Contact</a>
-				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-					<i class="fa fa-bars"></i>
-				</a>
+		<div id="myNav" class="overlay">
+			<div class="table">
+		<ul class="menu">
+			<li><a class="menuItem" style="text-decoration:none" href="#">About</a></li>
+			<li><a class="menuItem" style="text-decoration:none" href="#">Portfolio</a></li>
+			<li><a class="menuItem" style="text-decoration:none" href="#">Contact</a></li>
+		</ul>
+			</div>
+					<button class="hamburger">
+					<i class="menuIcon material-icons">Menu</i>
+					<i class="closeIcon material-icons">Close</i>
+					</button>
+        <script src="index.js"></script>
 		</div>
 	</nav>
-	<div class="main-box">
-		<header>Yasmin Shenair - Web Developer</header>
+	<div class="col-10 col-lg-6 offset-1 offset-lg-3 text-center">
+		<header>
+		<div class="main-box">
+		<h2>Yasmin Shenair - Web Developer</h2>
 	<p>Hello, I'm looking to be a Full-Stack Developer. Currently studying at iO Academy and have just finished studying HTML and CSS. Next up is PHP!</p>
-</div>
+		</div>
+	</header>
+		<main>
 <section class="project-section">
-<div class="project-container">
-	<div class="project-item">
-		<h2>Project</h2>
-		<a href="#" class="code-image" title="code-image"><img src="coding.jpg" alt="code image"></a>
-		<p>Hello, this is my portfolio, stay tuned for projects!</p>
-		<div class="buttons"><button class="live">View Live</button>
-		<button class="code">View Code</button>
+	<div class="col-12 col-md-6 col-lg-4">
+		<div class="card mb-4 col-lg-4">
+			<div class="card-body">
+					<h2 class="card-title">Project</h2>
+					<a href="#" class="code-image" title="code-image"><img src="coding.jpg" alt="code image"></a>
+					<p>Hello, this is my portfolio, stay tuned for projects!</p>
+					<div class="buttons"><button class="live">View Live</button>
+						<button class="code">View Code</button>
+					</div>
+			</div>
+		</div>
 	</div>
+
+	<div class="col-12 col-md-6 col-lg-4">
+		<div class="card mb-4 col-lg-4">
+			<div class="card-body">
+					<h2 class="card-title">Project</h2>
+					<a href="#" class="code-image" title="code-image"><img src="coding.jpg" alt="code image"></a>
+					<p>Hello, this is my portfolio, stay tuned for projects!</p>
+					<div class="buttons"><button class="live">View Live</button>
+						<button class="code">View Code</button>
+					</div>
+			</div>
+		</div>
 	</div>
-	<div class="project-item">
-		<h2>Project</h2>
-		<a href="#" class="code-image" title="code-image"><img src="coding.jpg" alt="code image"></a>
-			<p>Hello, this is my portfolio, stay tuned for projects!</p>
-		<div class="buttons"><button class="live">View Live</button>
-		<button class="code">View Code</button>
+
+	<div class="col-12 col-md-6 col-lg-4">
+		<div class="card mb-4 col-lg-4">
+			<div class="card-body">
+					<h2 class="card-title">Project</h2>
+					<a href="#" class="code-image" title="code-image"><img src="coding.jpg" alt="code image"></a>
+					<p>Hello, this is my portfolio, stay tuned for projects!</p>
+					<div class="buttons"><button class="live">View Live</button>
+						<button class="code">View Code</button>
+					</div>
+			</div>
+		</div>
 	</div>
+
+	<div class="col-12 col-md-6 col-lg-4">
+		<div class="card mb-4 col-lg-4">
+			<div class="card-body">
+					<h2 class="card-title">Project</h2>
+					<a href="#" class="code-image" title="code-image"><img src="coding.jpg" alt="code image"></a>
+					<p>Hello, this is my portfolio, stay tuned for projects!</p>
+					<div class="buttons"><button class="live">View Live</button>
+						<button class="code">View Code</button>
+					</div>
+			</div>
+		</div>
 	</div>
-	<div class="project-item">
-		<h2>Project</h2>
-		<a href="#" class="code-image" title="code-image"><img src="coding.jpg" alt="code image"></a>
-			<p>Hello, this is my portfolio, stay tuned for projects!</p>
-		<div class="buttons"><button class="live">View Live</button>
-		<button class="code">View Code</button>
+
+	<div class="col-12 col-md-6 col-lg-4">
+		<div class="card mb-4 col-lg-4">
+			<div class="card-body">
+					<h2 class="card-title">Project</h2>
+					<a href="#" class="code-image" title="code-image"><img src="coding.jpg" alt="code image"></a>
+					<p>Hello, this is my portfolio, stay tuned for projects!</p>
+					<div class="buttons"><button class="live">View Live</button>
+						<button class="code">View Code</button>
+					</div>
+			</div>
+		</div>
 	</div>
+
+	<div class="col-12 col-md-6 col-lg-4">
+		<div class="card mb-4 col-lg-4">
+			<div class="card-body">
+					<h2 class="card-title">Project</h2>
+					<a href="#" class="code-image" title="code-image"><img src="coding.jpg" alt="code image"></a>
+					<p>Hello, this is my portfolio, stay tuned for projects!</p>
+					<div class="buttons"><button class="live">View Live</button>
+						<button class="code">View Code</button>
+					</div>
+			</div>
+		</div>
 	</div>
-	<div class="project-item">
-		<h2>Project</h2>
-		<a href="#" class="code-image" title="code-image"><img src="coding.jpg" alt="code image"></a>
-			<p>Hello, this is my portfolio, stay tuned for projects!</p>
-		<div class="buttons"><button class="live">View Live</button>
-		<button class="code">View Code</button>
-	</div>
-	</div>
-	<div class="project-item">
-		<h2>Project</h2>
-		<a href="#" class="code-image" title="code-image"><img src="coding.jpg" alt="code image"></a>
-			<p>Hello, this is my portfolio, stay tuned for projects!</p>
-		<div class="buttons"><button class="live">View Live</button>
-		<button class="code">View Code</button>
-	</div>
-	</div>
-	<div class="project-item">
-		<h2>Project</h2>
-		<a href="#" class="code-image" title="code-image"><img src="coding.jpg" alt="code image"></a>
-			<p>Hello, this is my portfolio, stay tuned for projects!</p>
-		<div class="buttons"><button class="live">View Live</button>
-		<button class="code">View Code</button>
-	</div>
-	</div>
-</div>
+
 </section>
+		</main>
 
 	<footer>
 		<div class="contacts">
@@ -93,5 +132,6 @@
 		<a href="#" class="github-logo" title="github-logo"><img src="github.png" alt="github logo"></a>
 	</div>
 	</footer>
+     </div>
 	</body>
 </html>
