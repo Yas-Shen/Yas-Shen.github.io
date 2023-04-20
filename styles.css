@@ -1,0 +1,295 @@
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+  background-image: url('northern-lights.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+	font-family: 'Ubuntu', sans-serif !important;
+}
+
+div.initials a {
+	display: none;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(156, 191, 199, 0.5);
+	color: rgba(22, 50, 79, 1.0);
+	height: 50px;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+.name {
+	display: flex;
+	justify-content: flex-start;
+	align-content: flex-start;
+	font-size: 17px;
+	position: relative;
+	top: 5px;
+	left: 10px;
+}
+
+.topnav .menuItems {
+	list-style-type: none;
+	margin: 0;
+	padding:0;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.topnav .menuItems li {
+	padding: 10px;
+}
+
+.topnav .menuItems li a {
+	display: block;
+	color: rgba(22, 50, 79, 1.0);
+	text-decoration: none;
+}
+
+.topnav .menuItems li a:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 5px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#icon {
+	display: none;
+}
+
+#main-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: rgba(22, 50, 79, 0.8);
+	color: rgba(255, 255, 255, 1.0);
+    height: 600px;
+    width: 700px;
+    margin: 0 0 15px 0;
+	border-radius: 15px;
+
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+	padding: 20px;
+}
+
+#main-box p {
+	display: flex;
+	align-content: center;
+	position: relative;
+	margin: 20px;
+}
+
+#project-section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 0 0 100px;
+}
+
+div.card {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: rgba(22, 50, 79, 0.8);
+	color: rgba(255, 255, 255, 1.0);
+	width: 300px;
+	border-radius: 15px;
+	margin: 5px;
+	padding: -50px;
+}
+
+h2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.code-image img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 250px;
+	height: 200px;
+	margin: 0 0 0 7px;
+}
+
+div.card-body p {
+	margin: 3px 2px 0 2px;
+}
+
+.buttons {
+	display: inline-flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 10px 33px 0 0;
+}
+
+button.live, .code {
+	display: inline;
+	justify-content: space-evenly;
+	align-items: stretch;
+	flex-direction: column;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: rgba(52, 163, 154, 1.0);
+	border: 2px solid rgba(52, 163, 154, 1.0);
+	border-radius: 15px;
+	padding-bottom: 2%;
+	margin: 0 0 2% 20%;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	background-color: rgba(90, 35, 163, 0.5);
+	color: rgba(1, 35, 55, 1.0);
+	height: 50px;
+	border-radius: 15px;
+}
+
+#contacts {
+	display: flex;
+	justify-content: center;
+	align-content: space-between;
+	object-fit: contain;
+}
+
+footer h4 {
+	margin: 5px 5px 0 0;
+}
+
+footer a.logo {
+	margin: 3px 0 0 0;
+}
+
+footer a.logo:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 5px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	margin: 0 0 2px 0;
+}
+
+@media screen and (max-width: 1000px) {
+
+	div.initials a {
+		display: flex;
+		justify-content: space-around;
+		align-items: flex-start;
+		width: 30px;
+		height: 30px;
+		margin: 0 0 5px 10px;
+	}
+
+	.name {
+		display: none;
+	}
+}
+@media screen and (max-width: 900px) {
+
+	h4 {
+		margin: 5% 0 0 0;
+	}
+
+	#contacts {
+		margin: 0 0 4% 0;
+	}
+}
+
+@media screen and (max-width: 850px) {
+
+	footer a {
+		margin: 4% 0 0 0;
+	}
+}
+
+@media screen and (max-width: 700px) {
+
+	#main-box {
+		display: inline-block;
+		width: 80%;
+		margin: 2% 10% 2% 2%;
+	}
+
+	div.project-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 80%;
+	}
+
+	div.card {
+		width: 100%;
+	}
+
+	h4 {
+		margin: 0 0 5% 0;
+	}
+
+	footer a {
+		margin: 2.5% 0 0 0;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	h3.name.responsive {
+		display: flex;
+		justify-content: flex-start;
+		align-content: flex-start;
+		font-size: 10px;
+		color: #16324f;
+		margin-top: 10%;
+	}
+
+	.navbar.responsive {
+		position: relative;
+	}
+
+	.navbar.responsive a {
+		float: none;
+		display: flex;
+		text-align: left;
+	}
+
+	div.initials a.responsive {
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	.main-box {
+		display: inline-block;
+		margin: 0 10% 0 0;
+		position: relative;
+		left: 11%;
+		width: 77.5%;
+	}
+
+	h4 {
+		margin: 4% 3% 0 0;
+	}
+
+	footer a {
+		margin: 3% 0 1% 0 ;
+	}
+}
