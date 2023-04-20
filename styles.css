@@ -3,6 +3,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
   background-image: url('northern-lights.jpg');
   background-repeat: no-repeat;
@@ -16,13 +20,14 @@ div.initials a {
 }
 
 
-h3 {
+.name {
 	display: flex;
 	justify-content: flex-start;
 	align-content: flex-start;
 	font-size: 17px;
 	color: #16324f;
 	position: relative;
+	top: 5px;
 	left: 10px;
 }
 
@@ -30,75 +35,53 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #9cbfc7;
-	color: #ffffff;
+	background-color: rgba(156, 191, 199, 0.5);
+	color: #16324f;
 	height: 50px;
 	border-radius: 15px;
 	overflow: hidden;
 }
 
-.hamburger {
-	display: none;
-}
-
-.closeIcon {
-	display: none;
-}
-
-.myNav a {
-	float: left;
+.topnav .menuItems {
+	list-style-type: none;
+	margin: 0;
+	padding:0;
+	overflow: hidden;
 	display: flex;
-	text-align: center;
-	color: #16324f;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 17px;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.myNav a.active {
-	background-color: #04aa6d;
-	color: #ffffff;
+.topnav .menuItems li {
+	padding: 10px;
 }
 
-.menu {
+.topnav .menuItems li a {
 	display: block;
-	list-style: none;
-	justify-items: stretch;
-	width: 300px;
-}
-
-li {
-	display: inline;
-	justify-content: space-evenly;
-	align-items: stretch;
-	text-decoration: none;
 	color: #16324f;
-	margin: 0 0 0 5px;
+	text-decoration: none;
 }
 
-li a:hover {
-	background-color: #ddd;
-	color: #000000;
+.topnav .menuItems li a:hover {
+	background-color: #ffffff;
+	border-radius: 5px;
+	border: 1px solid #ffffff;
 }
 
-.table {
-	display: table;
-	margin: 0 auto;
+#icon {
+	display: none;
 }
 
-.menuItem {
-	display: inline;
-}
-
-.main-box {
+#main-box {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 	background-color: #16324f;
 	color: #ffffff;
-    height: 450px;
+    height: 350px;
     width: 700px;
-    margin-bottom: 15px;
+    margin: 0 0 15px 0;
 	border-radius: 15px;
 
 }
@@ -120,18 +103,25 @@ p {
 	margin: 20px;
 }
 
-.project-section {
+#project-section {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	margin: 0 0 0 100px;
 }
 
-div.project-container {
+div.card {
 	display: flex;
+	flex-direction: row;
 	justify-content: center;
+	align-items: center;
 	flex-wrap: wrap;
-	width: 60%;
-	margin: 20px;
+	background-color: #16324f;
+	color: #ffffff;
+	width: 300px;
+	border-radius: 15px;
+	margin: 5px;
+	padding: -50px;
 }
 
 h2 {
@@ -144,32 +134,20 @@ h2 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 80%;
-	height: 80%;
-	margin-left: 10%;
+	width: 250px;
+	height: 200px;
+	margin: 0 0 0 7px;
 }
 
-div.card {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background-color: #16324f;
-	color: #ffffff;
-	width: 300px;
-	border-radius: 15px;
-	margin: 5px;
-	padding: -50px;
-}
-
-div.project-item p {
-	margin-right: 20%;
+div.card-body p {
+	margin: 3px 0 0 10px;
 }
 
 .buttons {
 	display: inline-flex;
 	justify-content: space-evenly;
 	align-items: center;
+	margin: 10px 33px 0 0;
 }
 
 button.live, .code {
@@ -189,102 +167,53 @@ footer {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	background-color: #5911a4;
+	background-color: rgba(90, 35, 163, 0.5);
+	color: rgba(1, 35, 55, 1.0);
 	height: 50px;
 	border-radius: 15px;
-	margin-top: 23%;
 }
 
-h4 {
+#contacts {
 	display: flex;
 	justify-content: center;
 	align-content: space-between;
-	margin-right: 2%;
-	margin-bottom: 1.5%;
-}
-.contacts {
-	display: flex;
-	justify-content: center;
-	align-content: space-around;
-	flex-direction: row;
-	flex-wrap: wrap;
 	object-fit: contain;
 }
 
-footer a {
-	margin-top: 1%;
+footer h4 {
+	margin: 10px 3px 0 0;
+}
+
+footer a.logo {
+	margin: 9px 0 0 0;
+}
+
+footer a.logo:hover {
+	background-color: rgba(255, 255, 255, 0.5);
 }
 
 @media screen and (max-width: 1000px) {
 
-	.initials {
+	div.initials a {
 		display: flex;
 		justify-content: space-around;
 		align-items: flex-start;
-		width: 100%;
-	}
-
-	.navbar {
-		display: none;
-	}
-
-	.menu {
-		position: fixed;
-		transform: translateY(-100%);
-		transition: transform 0.2s;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		z-index: 99;
-		background: black;
-		color: white;
-		list-style: none;
-		padding-top: 4rem;
-	}
-
-	.hamburger {
-		position: fixed;
-		width: 10px;
-		height: 10px;
-		z-index: 100;
-		top: 1em;
-		right: 1rem;
-		padding: 4px;
-		border: #000000 solid 1px;
-		background: #ffffff;
-		cursor: pointer;
-	}
-
-	.closeIcon {
-		display: none;
+		width: 30px;
+		height: 30px;
+		margin: 0 0 5px 10px;
 	}
 
 	.name {
 		display: none;
 	}
-
-	div.initials a {
-		display: flex;
-	}
-
-	h4 {
-		margin: 1% 0 0 0;
-	}
-
-	footer a {
-		display: flex;
-		margin: 0 0 0.5% 0;
-	}
 }
-
 @media screen and (max-width: 900px) {
 
 	h4 {
 		margin: 5% 0 0 0;
 	}
 
-	.contacts {
+	#contacts {
 		margin: 0 0 4% 0;
 	}
 }
@@ -298,7 +227,7 @@ footer a {
 
 @media screen and (max-width: 700px) {
 
-	.main-box {
+	#main-box {
 		display: inline-block;
 		width: 80%;
 		margin: 2% 10% 2% 2%;
