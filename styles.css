@@ -40,6 +40,10 @@ nav {
 	left: 10px;
 }
 
+#icon {
+	display: none;
+}
+
 .topnav .menuItems {
 	list-style-type: none;
 	margin: 0;
@@ -64,10 +68,6 @@ nav {
 	background-color: rgba(255, 255, 255, 0.5);
 	border-radius: 5px;
 	border: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-#icon {
-	display: none;
 }
 
 #main-box {
@@ -207,24 +207,61 @@ footer a.logo:hover {
 	}
 }
 @media screen and (max-width: 900px) {
-
-	h4 {
-		margin: 5% 0 0 0;
-	}
-
-	#contacts {
-		margin: 0 0 4% 0;
+	.initials {
+		margin: 0 0 0 7px;
 	}
 }
 
 @media screen and (max-width: 850px) {
 
-	footer a {
-		margin: 4% 0 0 0;
+	.menuItems {
+		margin: 0 0 0 4px;
+	}
+
+	section #project-section {
+		margin: 0 5px 0 0;
+	}
+
+	footer #contacts {
+		margin: 3px 0 0 0;
 	}
 }
 
 @media screen and (max-width: 700px) {
+
+	#icon {
+		float: right;
+		display: block;
+		color: rgba(22, 50, 79, 1.0);
+		margin: 0 5px 0 0;
+	}
+
+	#icon:hover {
+		background-color: rgba(255, 255, 255, 0.5);
+		border-radius: 5px;
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		padding: 0 3px 0 3px;
+	}
+
+	#icon a i {
+		justify-content: flex-end;
+		align-items: flex-end;
+		font-size: 17px;
+	}
+
+	.topnav .menuItems {
+		display: none;
+	}
+
+	.topnav.responsive .menuItems {
+		display: flex;
+		flex-direction: row;
+		text-align: center;
+	}
+
+	.topnav.responsive .menuItems li {
+		margin: 10px 0 0 0;
+	}
 
 	#main-box {
 		display: inline-block;
@@ -232,7 +269,7 @@ footer a.logo:hover {
 		margin: 2% 10% 2% 2%;
 	}
 
-	div.project-container {
+	div#project-container {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -277,16 +314,16 @@ footer a.logo:hover {
 		justify-content: flex-start;
 	}
 
-	.main-box {
+	#main-box {
 		display: inline-block;
-		margin: 0 10% 0 0;
 		position: relative;
-		left: 11%;
-		width: 77.5%;
+		left: 20px;
+		width: 300px;
+		height: 980px;
 	}
 
 	h4 {
-		margin: 4% 3% 0 0;
+		padding: 30px 0 0 0;
 	}
 
 	footer a {
