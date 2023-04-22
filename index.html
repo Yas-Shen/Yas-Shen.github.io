@@ -16,20 +16,18 @@
 	<nav>
 		<div class="initials">
 			<h3 class="name">Yasmin Shenair</h3>
-			<a href="#" class="icon" title="initials">
+			<a href="#" class="initials" title="initials">
 				<img src="ys.png" alt="initials" />
 			</a>
 		</div>
 		<div id="myTopNav" class="topnav">
-			<ul class="menuItems">
+			<a id="icon" href="javascript:void(0);" onclick="toggleMenu()">
+				<i class="fa fa-bars"></i>
+			</a>
+			<ul class="menuItems" id="menuItems">
 				<li><a href="#main-box">About</a></li>
 				<li><a href="#project-section">Portfolio</a></li>
 				<li><a href="#contacts">Contact</a></li>
-			    <li id="icon">
-					<a href="javascript:void(0);" onclick="toggleMenu()">
-				      <i class="fa fa-bars"></i>
-				    </a>
-				</li>
 			</ul>
 		</div>
         <script src="index.js"></script>
